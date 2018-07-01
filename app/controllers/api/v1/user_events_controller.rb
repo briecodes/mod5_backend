@@ -30,7 +30,7 @@ class Api::V1::UserEventsController < ApplicationController
 
     private
         def user_event_params
-            params.permit(user_id, event_id)
+            params.permit(:user_id, :event_id)
         end
 
         def find_user_event
