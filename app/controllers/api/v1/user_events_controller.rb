@@ -21,7 +21,7 @@ class Api::V1::UserEventsController < ApplicationController
 
     def update
         @user_event.update(user_event_params)
-        if @note.save
+        if @user_event.save
             render json: @user_event, status: :accepted
         else
             render json: {errors: @user_event.errors.full_messages}, status: :unprocessible_entity
