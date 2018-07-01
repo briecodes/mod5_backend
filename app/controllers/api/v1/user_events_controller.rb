@@ -1,39 +1,39 @@
 class Api::V1::UserEventsController < ApplicationController
-    before_action :find_user, only: [:update, :show]
+    before_action :find_user_event, only: [:update, :show]
 
     def index
-        @users = User.all
-        render json: @users
+        @user_events = UserEvent.all
+        render json: @user_events
     end
 
     def show
-        render json: @user
+        render json: @user_events
     end
 
     def create
-        user = User.new(user_params)
-        if user.save
-            render json: user, status: :accepted
+        user_event = UserEvent.new(user_event_params)
+        if user_event.save
+            render json: user_event, status: :accepted
         else
-            render json: {errors: user.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: user_event.errors.full_messages}, status: :unprocessible_entity
         end
     end
 
     def update
-        @user.update(user_params)
+        @user_event.update(user_event_params)
         if @note.save
-            render json: @user, status: :accepted
+            render json: @user_event, status: :accepted
         else
-            render json: {errors: @user.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: @user_event.errors.full_messages}, status: :unprocessible_entity
         end
     end
 
     private
-        def user_params
-            params.permit(:username, :password, :name)
+        def user_event_params
+            params.permit(user_id, event_id)
         end
 
-        def find_user
-            @user = User.find(params[:id])
+        def find_user_event
+            @user_events = UserEvent.find(params[:id])
         end
 end
