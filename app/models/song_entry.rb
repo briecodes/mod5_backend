@@ -1,0 +1,2 @@
+class SongEntry < ApplicationRecord
+end
