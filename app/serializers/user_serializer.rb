@@ -3,4 +3,5 @@ class UserSerializer < ActiveModel::Serializer
 
   has_many :events
   has_many :song_entries
+  has_many :user_events
 end

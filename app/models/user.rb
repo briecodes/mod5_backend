@@ -3,6 +3,7 @@ class User < ApplicationRecord
     
     has_many :events
     has_many :song_entries
+    has_many :user_events
 
     validates :username, uniqueness: true
     validates :username, format: { without: /\s/ }

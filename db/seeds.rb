@@ -8,6 +8,7 @@ users_list = [
 
 events_list = [
     {user_id: 1, title: 'Truffle Butter', location: 'Flatiron School: Kay', description: 'Down & Dirty open-mic throwdown.', key_code: 'learnlovecode', active: true},
+    {user_id: 1, title: 'Closer', location: 'Flatiron School: Backroom', description: 'Ne-Yo Party.', key_code: 'learnlovecode', active: false},
     {user_id: 2, title: 'Mod5 Party', location: 'Flatiron School: Turing', description: 'Party with the most obnoxious cohort in Flatirons history', key_code: 'learnlovecode', active: true},
     {user_id: 3, title: 'Letters from the Wasteland', location: 'Fifth Avenue', description: 'A Wallflowers Karaoke Extravaganza', key_code: 'jakob', active: true},
     {user_id: 3, title: 'OMG The 80s', location: 'Pier 8', description: 'Only songs from the 80s!', key_code: 'ilovethe80s', active: true}
