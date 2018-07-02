@@ -29,7 +29,7 @@ class Api::V1::EventsController < ApplicationController
     end
 
     private
-        def user_event_params
+        def event_params
             params.permit(:user_id, :title, :location, :description, :key_code)
         end
 
