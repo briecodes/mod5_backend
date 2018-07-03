@@ -15,11 +15,11 @@ events_list = [
 ]
 
 user_events_list = [
-    {user_id: 1, event_id: 1},
     {user_id: 2, event_id: 1},
     {user_id: 3, event_id: 1},
     {user_id: 4, event_id: 1},
 
+    {user_id: 1, event_id: 2},
     {user_id: 3, event_id: 2},
     {user_id: 4, event_id: 2},
 
@@ -33,12 +33,12 @@ user_events_list = [
 ]
 
 song_entry_list = [
-    {user_id: 1, event_id: 1, song_title: 'Only', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=BU769XX_dIQ', video_id: 'BU769XX_dIQ', order_number: 1, played: false, passed: false},
+    {user_id: 2, event_id: 1, song_title: 'Only', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=BU769XX_dIQ', video_id: 'BU769XX_dIQ', order_number: 1, played: false, passed: false},
     {user_id: 2, event_id: 1, song_title: 'Chun-Li', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=Wpm07-BGJnE', video_id: 'BGJnE', order_number: 2, played: false, passed: false},
     {user_id: 3, event_id: 1, song_title: 'Only', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=BU769XX_dIQ', video_id: 'BU769XX_dIQ', order_number: 1, played: false, passed: false},
     {user_id: 4, event_id: 1, song_title: 'Chun-Li', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=Wpm07-BGJnE', video_id: 'BGJnE', order_number: 2, played: false, passed: false},
     
-    {user_id: 3, event_id: 2, song_title: 'Turn Down for What', song_artist: 'Lil Jon', video_url: 'https://www.youtube.com/watch?v=HMUDVMiITOU', video_id: 'HMUDVMiITOU', order_number: 1, played: false, passed: false},
+    {user_id: 1, event_id: 2, song_title: 'Turn Down for What', song_artist: 'Lil Jon', video_url: 'https://www.youtube.com/watch?v=HMUDVMiITOU', video_id: 'HMUDVMiITOU', order_number: 1, played: false, passed: false},
     {user_id: 4, event_id: 2, song_title: 'Apeshit', song_artist: 'The Carters', video_url: 'https://www.youtube.com/watch?v=kbMqWXnpXcA', video_id: 'kbMqWXnpXcA', order_number: 2, played: false, passed: false},
     {user_id: 3, event_id: 2, song_title: 'Turn Down for What', song_artist: 'Lil Jon', video_url: 'https://www.youtube.com/watch?v=HMUDVMiITOU', video_id: 'HMUDVMiITOU', order_number: 1, played: false, passed: false},
     

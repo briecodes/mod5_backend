@@ -8,8 +8,8 @@ class CreateSongEntries < ActiveRecord::Migration[5.2]
       t.string :video_url
       t.string :video_id
       t.integer :order_number
-      t.boolean :played
-      t.boolean :passed
+      t.boolean :played, default: false
+      t.boolean :passed, default: false
 
       t.timestamps
     end
