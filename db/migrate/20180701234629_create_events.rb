@@ -6,7 +6,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :location
       t.string :description
       t.string :key_code
-      t.boolean :active
+      t.boolean :active, default: true
 
       t.timestamps
     end

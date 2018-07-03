@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_07_01_234822) do
     t.string "location"
     t.string "description"
     t.string "key_code"
-    t.boolean "active"
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2018_07_01_234822) do
     t.string "video_url"
     t.string "video_id"
     t.integer "order_number"
-    t.boolean "played"
-    t.boolean "passed"
+    t.boolean "played", default: false
+    t.boolean "passed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
