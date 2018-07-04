@@ -30,7 +30,7 @@ class Api::V1::SongEntriesController < ApplicationController
 
     private
         def song_entry_params
-            params.permit(:user_id, :event_id, :song_title, :song_artist, :video_url, :video_id, :order_number)
+            params.permit(:user_id, :event_id, :song_title, :song_artist, :video_url, :video_id, :order_number, :played, :passed)
         end
 
         def find_song_entry
