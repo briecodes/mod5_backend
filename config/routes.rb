@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         resources :users, only: [:index, :show, :create]
         resources :user_events, only: [:index, :show, :create, :delete, :destroy]
         resources :events, only: [:index, :show, :create]
-        resources :song_entries, only: [:index, :show, :create]
+        resources :song_entries, only: [:index, :show, :create, :update]
       end
     end
   end
