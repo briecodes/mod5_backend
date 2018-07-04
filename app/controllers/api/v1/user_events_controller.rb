@@ -1,5 +1,5 @@
 class Api::V1::UserEventsController < ApplicationController
-    before_action :find_user_event, only: [:update, :show]
+    before_action :find_user_event, only: [:update, :show, :destroy]
 
     def index
         @user_events = UserEvent.all
@@ -26,6 +26,11 @@ class Api::V1::UserEventsController < ApplicationController
         else
             render json: {errors: @user_event.errors.full_messages}, status: :unprocessible_entity
         end
+    end
+
+    def destroy
+        @user_events.destroy
+        render json: {status: 'Deleted!'}
     end
 
     private
