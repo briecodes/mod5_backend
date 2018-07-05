@@ -1,5 +1,5 @@
 class Api::V1::SongEntriesController < ApplicationController
-    before_action :find_song_entry, only: [:update, :show]
+    before_action :find_song_entry, only: [:update, :show, :destroy]
 
     def index
         @song_entries = SongEntry.all
@@ -26,6 +26,11 @@ class Api::V1::SongEntriesController < ApplicationController
         else
             render json: {errors: @song_entry.errors.full_messages}, status: :unprocessible_entity
         end
+    end
+
+    def destroy
+      @song_entry.destroy
+      render json: {status: 'Deleted!'}
     end
 
     private
