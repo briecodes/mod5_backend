@@ -1,4 +1,5 @@
 users_list = [
+    {name: 'Brie', username: 'bries', password: 'pass'},
     {name: 'Austin', username: 'austinp', password: 'pass'},
     {name: 'Joe', username: 'joeg', password: 'pass'},
     {name: 'Celeste', username: 'celesteg', password: 'pass'},
