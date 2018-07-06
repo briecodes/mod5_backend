@@ -30,4 +30,15 @@ class ApplicationController < ActionController::API
     !!get_decoded_token
   end
 
+  def requires_user_match
+    @user = User.find_by(id: params[:user_id])
+
+    if @user.id != get_decoded_token[0]['id']
+      render json: {
+        message: 'Unauthorized user.'
+      }, status: :unauthorized
+    end
+
+  end
+
 end
