@@ -9,4 +9,5 @@ class User < ApplicationRecord
     validates :username, format: { without: /\s/ }
     validates :username, presence: true
     validates :name, presence: true
+    validates :password, presence: true
 end
