@@ -22,7 +22,8 @@ class Api::V1::UsersController < ApplicationController
 
       # render json: {user: user}, status: :accepted
       render json: {
-        token: token
+        token: token,
+        user: user
       }
       
     else
