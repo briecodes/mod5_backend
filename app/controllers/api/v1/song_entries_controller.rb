@@ -1,5 +1,6 @@
 class Api::V1::SongEntriesController < ApplicationController
     before_action :find_song_entry, only: [:update, :show, :destroy]
+    before_action :requires_login, only: [:index, :show, :create, :update, :destroy]
 
     def index
         @song_entries = SongEntry.all

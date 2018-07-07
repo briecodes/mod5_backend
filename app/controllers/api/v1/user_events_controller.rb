@@ -1,6 +1,7 @@
 class Api::V1::UserEventsController < ApplicationController
     before_action :find_user_event, only: [:update, :show, :destroy]
-
+    before_action :requires_login, only: [:index, :show, :create, :update, :destroy]
+    
     def index
         @user_events = UserEvent.all
         render json: @user_events

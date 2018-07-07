@@ -53,7 +53,6 @@ user_events_list = [
     {user_id: 4, event_id: 2},
 
     {user_id: 1, event_id: 3},
-    {user_id: 2, event_id: 3},
     {user_id: 3, event_id: 3},
     {user_id: 4, event_id: 3},
 
@@ -91,7 +90,7 @@ song_entry_list = [
     {user_id: 3, event_id: 2, song_title: 'Turn Down for What', song_artist: 'Lil Jon', video_url: 'https://www.youtube.com/watch?v=HMUDVMiITOU', video_id: 'HMUDVMiITOU', order_number: 1, played: false, passed: false},
     
     {user_id: 1, event_id: 3, song_title: 'Sleepwalker', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=Qvwu4e664Jo', video_id: 'Qvwu4e664Jo', order_number: 1, played: false, passed: false},
-    {user_id: 2, event_id: 3, song_title: 'Hand Me Down', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=eohz4ZuyDgU', video_id: 'eohz4ZuyDgU', order_number: 2, played: false, passed: false},
+    {user_id: 3, event_id: 3, song_title: 'Hand Me Down', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=eohz4ZuyDgU', video_id: 'eohz4ZuyDgU', order_number: 2, played: false, passed: false},
     {user_id: 3, event_id: 3, song_title: 'Sleepwalker', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=Qvwu4e664Jo', video_id: 'Qvwu4e664Jo', order_number: 1, played: false, passed: false},
     {user_id: 4, event_id: 3, song_title: 'Hand Me Down', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=eohz4ZuyDgU', video_id: 'eohz4ZuyDgU', order_number: 2, played: false, passed: false},
     

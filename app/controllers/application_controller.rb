@@ -3,8 +3,13 @@ class ApplicationController < ActionController::API
     ENV['JWT_SECRET']
   end
 
+  def create_token(payload)
+    token = JWT.encode payload, ENV['JWT_SECRET'], 'HS256'
+  end
+
   def get_token
     request.headers["Authorization"]
+  
   end
 
   def get_decoded_token
@@ -21,7 +26,8 @@ class ApplicationController < ActionController::API
   def requires_login
     if !is_authenticated?
       render json: {
-        message: 'No good'
+        message: 'No good',
+        error: 'Not authorized.'
       }, status: :unauthorized
     end
   end
