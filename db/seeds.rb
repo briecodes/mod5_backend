@@ -18,7 +18,8 @@ users_list = [
     {name: 'Billy', username: 'billyd', password: 'pass'},
     {name: 'Yong-Nicholas', username: 'yongn', password: 'pass'},
     {name: 'Matt', username: 'mattt', password: 'pass'},
-    {name: 'Ian', username: 'ianp', password: 'pass'}
+    {name: 'Ian', username: 'ianp', password: 'pass'},
+    {name: 'El', username: 'elc', password: 'pass'}
 ]
 
 events_list = [
