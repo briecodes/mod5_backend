@@ -27,7 +27,7 @@ events_list = [
     {user_id: 1, title: 'Closer', location: 'Flatiron School: Backroom', description: 'Ne-Yo Party.', key_code: 'learnlovecode', active: false},
     {user_id: 2, title: 'Mod5 Party', location: 'Flatiron School: Turing', description: 'Party with the most obnoxious cohort in Flatirons history', key_code: 'learnlovecode', active: true},
     {user_id: 3, title: 'Letters from the Wasteland', location: 'Fifth Avenue', description: 'A Wallflowers Karaoke Extravaganza', key_code: 'jakob', active: true},
-    {user_id: 3, title: 'OMG The 80s', location: 'Pier 8', description: 'Only songs from the 80s!', key_code: 'ilovethe80s', active: true}
+    {user_id: 6, title: 'OMG The 80s', location: 'Pier 8', description: 'Only songs from the 80s!', key_code: 'ilovethe80s', active: true}
 ]
 
 user_events_list = [
@@ -57,7 +57,7 @@ user_events_list = [
     {user_id: 3, event_id: 3},
     {user_id: 4, event_id: 3},
 
-    {user_id: 3, event_id: 4},
+    {user_id: 3, event_id: 5},
     {user_id: 4, event_id: 4}
 ]
 
@@ -95,7 +95,7 @@ song_entry_list = [
     {user_id: 3, event_id: 3, song_title: 'Sleepwalker', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=Qvwu4e664Jo', video_id: 'Qvwu4e664Jo', order_number: 1, played: false, passed: false},
     {user_id: 4, event_id: 3, song_title: 'Hand Me Down', song_artist: 'Wallflowers', video_url: 'https://www.youtube.com/watch?v=eohz4ZuyDgU', video_id: 'eohz4ZuyDgU', order_number: 2, played: false, passed: false},
     
-    {user_id: 3, event_id: 4, song_title: 'Sin in my Heart', song_artist: 'Siouxsie and the Banshees', video_url: 'https://www.youtube.com/watch?v=9hpEEKqdCDU', video_id: '9hpEEKqdCDU', order_number: 1, played: false, passed: false},
+    {user_id: 3, event_id: 5, song_title: 'Sin in my Heart', song_artist: 'Siouxsie and the Banshees', video_url: 'https://www.youtube.com/watch?v=9hpEEKqdCDU', video_id: '9hpEEKqdCDU', order_number: 1, played: false, passed: false},
     {user_id: 4, event_id: 4, song_title: 'The Cure', song_artist: 'Pictures of You', video_url: 'https://www.youtube.com/watch?v=-56h8d3gLgk', video_id: '56h8d3gLgk', order_number: 2, played: false, passed: false}
 ]
   
