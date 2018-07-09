@@ -14,8 +14,7 @@ class SessionsController < ApplicationController
       }
     else
       render json: {
-        # errors: 'Those credentials do not match anything we have in our database.'
-        errors: get_secret()
+        errors: 'Those credentials do not match anything we have in our database.'
       }, status: :unauthorized
     end
   end
