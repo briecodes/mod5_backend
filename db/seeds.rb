@@ -19,11 +19,13 @@ users_list = [
     {name: 'Yong-Nicholas', username: 'yongn', password: 'pass'},
     {name: 'Matt', username: 'mattt', password: 'pass'},
     {name: 'Ian', username: 'ianp', password: 'pass'},
-    {name: 'El', username: 'elc', password: 'pass'}
+    {name: 'El', username: 'elc', password: 'pass'},
+    {name: 'Humzah', username: 'humzahc', password: 'pass'},
+    {name: 'Laura', username: 'laurak', password: 'pass'}
 ]
 
 events_list = [
-    {user_id: 1, title: 'Truffle Butter', location: 'Flatiron School: Kay', description: 'Down & Dirty open-mic throwdown.', key_code: 'learnlovecode', active: true},
+    {user_id: 1, title: 'Truffle Butter', location: 'Flatiron School: Kay', description: 'Down & Dirty open-mic throwdown.', key_code: 'pass', active: true, public: false},
     {user_id: 1, title: 'Closer', location: 'Flatiron School: Backroom', description: 'Ne-Yo Party.', key_code: 'learnlovecode', active: false},
     {user_id: 2, title: 'Mod5 Party', location: 'Flatiron School: Turing', description: 'Party with the most obnoxious cohort in Flatirons history', key_code: 'learnlovecode', active: true},
     {user_id: 3, title: 'Letters from the Wasteland', location: 'Fifth Avenue', description: 'A Wallflowers Karaoke Extravaganza', key_code: 'jakob', active: true},
@@ -49,6 +51,9 @@ user_events_list = [
     {user_id: 17, event_id: 1},
     {user_id: 18, event_id: 1},
     {user_id: 19, event_id: 1},
+    {user_id: 20, event_id: 1},
+    {user_id: 21, event_id: 1},
+    {user_id: 22, event_id: 1},
 
     {user_id: 3, event_id: 2},
     {user_id: 4, event_id: 2},
@@ -80,6 +85,9 @@ song_entry_list = [
     {user_id: 17, event_id: 1, song_title: 'In the End', song_artist: 'Linkin Park', video_url: 'https://www.youtube.com/watch?v=GJR61U037aE', video_id: 'GJR61U037aE'},
     {user_id: 18, event_id: 1, song_title: 'Paradise by the Dashboard Light', song_artist: 'Meatloaf', video_url: 'https://www.youtube.com/watch?v=D5pETpYC1D8', video_id: 'D5pETpYC1D8'},
     {user_id: 19, event_id: 1, song_title: 'Evil', song_artist: 'Interpol', video_url: 'https://www.youtube.com/watch?v=CgHaZPjnkm0', video_id: 'CgHaZPjnkm0'},
+    {user_id: 20, event_id: 1, song_title: 'Take on Me', song_artist: 'Ah-ha', video_url: 'https://www.youtube.com/watch?v=82ND_6aPyEM', video_id: '82ND_6aPyEM'},
+    {user_id: 21, event_id: 1, song_title: 'Space Oddity', song_artist: 'David Bowie', video_url: 'https://www.youtube.com/watch?v=UJa8azw5Cg8', video_id: 'UJa8azw5Cg8'},
+    {user_id: 22, event_id: 1, song_title: 'Africa', song_artist: 'Toto', video_url: 'https://www.youtube.com/watch?v=ya3HfowI_aY', video_id: 'ya3HfowI_aY'},
 
     {user_id: 2, event_id: 1, song_title: 'Only', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=BU769XX_dIQ', video_id: 'BU769XX_dIQ', order_number: 1, played: false, passed: false},
     {user_id: 2, event_id: 1, song_title: 'Chun-Li', song_artist: 'Nicki Minaj', video_url: 'https://www.youtube.com/watch?v=Wpm07-BGJnE', video_id: 'BGJnE', order_number: 2, played: false, passed: false},
