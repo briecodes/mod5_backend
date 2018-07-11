@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2018_07_01_234822) do
     t.string "description"
     t.string "key_code"
     t.boolean "active", default: true
+    t.boolean "public", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
